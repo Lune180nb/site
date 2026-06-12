@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+  font-family:"Lato", sans-serif;
+}
+
+main{
+  display:flex;
+  align-items:center;
+  
+  min-height:40vh;
+  
+  background-image:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url("../pexels-rumpy-29833130.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main .central{
+  margin-left:4rem;
+  padding:1rem;
+  font-size:1.5rem;
+}
+
+main .central h1{
+  color:#D7CCC8;
+  font-size: 4rem;
+  animation:moverEsquerda 1.5s ease;
+}
+
+
+main .central button{
+  padding:1rem;
+  margin-top:1.5rem;
+  font-size: 1.5rem;
+  
+  border:4px solid #D4AF37;
+  background-color:#4E342E;
+  animation:moverEsquerda 1.5s ease;
+}
+
+main .central button:hover{
+  border:4px solid green;
+  background-color:#4ADE80;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+main .central button:hover .bi-whatsapp{
+  color:green;
+}
+
+.bi-whatsapp{
+  color:#D4AF37;
+}
+
+/*Animações*/
+
+@keyframes moverEsquerda{
+  from{
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*---------------------*/
+
+/*Responsividade*/
+
+@media (max-width:680px){
+  main .central{
+    margin-left:1rem;
+  }
+  
+  main .central h1{
+  color:#D7CCC8;
+  font-size: 2rem;
+  animation:moverEsquerda 1.5s ease;
+}
+
+@media(max-width:360px){
+  
+  main .central h1{
+  font-size: 1.5rem;
+}
+}
+
+}
+
+/*---------------------*/
